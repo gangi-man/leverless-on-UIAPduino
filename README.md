@@ -1,12 +1,19 @@
 # Leverless on UIAPduino
 
 ## Overview
-Leverless on UIAPduino is an implementation of a USB HID game controller for UIAPduino.
+Leverless on UIAPduino is an implementation of a USB HID game controller for [UIAPduino](https://www.uiap.jp/uiapduino/pro-micro/ch32v003/v1dot4).
+
+This project is based on the demo_gamepad example from [rv003usb](https://github.com/cnlohr/rv003usb/tree/master/demo_gamepad)
+
+<img src="images/3d-printed-leverless.jpg" height="400px">
 
 ## Hardware
 Just connect tactile switches to the UIAPduino GPIO pins as shown in the schematic.
 
 <img src="images/leverless-schematic.png" height="280px">
+
+## 3D Model
+There is an example [enclosure model](https://www.thingiverse.com/thing:7350970) but you can use your own enclosure and buttons.
 
 ## Building the Firmware
 ### Prerequisites
@@ -20,7 +27,7 @@ Initialize the submodules with the following command.
 ```
 
 ### Build / Flash
-Connect your WCH-LinkE to your PC and the UIAPduino board then run the following commands
+Connect your WCH-LinkE to your PC and the UIAPduino board then, run the following commands
 
 
 ```
@@ -29,9 +36,16 @@ make
 ```
 
 ### Test
-Connect UIAPDuino to a Windows PC and start joy.cpl
+Connect the UIAPDuino to a Windows PC and run joy.cpl.
 
 If everything works correctly, the controller will appear.
 
-<img src="images/joy-cpl.png" height="280px">
+<img src="images/joy-cpl.png" height="200px">
 
+Open the property window.
+
+Connect GND to GPIO pins, if the firmware is working correctly, you'll see corresponding buttons being pressed in the property window.
+
+<img src="images/test-button7.png" height="200px"> <img src="images/test-dpad-left.png" height="200px">
+
+<img src="images/pin-layout.png" height="200px">
