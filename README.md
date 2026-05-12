@@ -20,6 +20,7 @@ There is an example [enclosure model](https://www.thingiverse.com/thing:7350970)
 ### Prerequisites
 This project uses [ch32fun](https://github.com/cnlohr/ch32fun). Please install the required tools described on [this page](https://github.com/cnlohr/ch32fun/wiki/Installation) beforehand.
 
+
 ### Submodules
 Initialize the submodules with the following command.
 
@@ -29,7 +30,6 @@ Initialize the submodules with the following command.
 
 ### Build / Flash
 Connect your WCH-LinkE to your PC and the UIAPduino board then, run the following commands
-
 
 ```
 cd gamepad
